@@ -14,19 +14,34 @@
             line-height: 1.6;
         }
         header {
-            background: linear-gradient(135deg, #004080, #0066cc);
+            background: url('ev-cars-in-row-istock-1662932717.jpg') no-repeat center center/cover;
             color: white;
-            padding: 50px 20px;
+            padding: 80px 20px;
             text-align: center;
+            position: relative;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 40, 80, 0.6);
+            z-index: 1;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
         }
         header p {
-            margin-top: 10px;
+            margin-top: 12px;
             font-size: 1.2em;
-            opacity: 0.9;
+            opacity: 0.95;
         }
         section {
             max-width: 900px;
@@ -43,14 +58,18 @@
         ul {
             padding-left: 20px;
         }
+        strong {
+            color: #003366;
+        }
         a.download {
             display: inline-block;
-            padding: 12px 20px;
+            padding: 14px 24px;
             background-color: #004080;
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
             margin-top: 15px;
+            font-weight: bold;
             transition: background 0.3s ease;
         }
         a.download:hover {
@@ -69,17 +88,18 @@
 <body>
     <header>
         <h1>EV Charging Infrastructure Policy Memo</h1>
-        <p>By Xiaoyuan Shi · Harvard Kennedy School</p>
+        <p>By <strong>Xiaoyuan Shi</strong> · <strong>Harvard Kennedy School</strong></p>
+        <a href="David Shi_Personal Policy Challenge Memo Final.pdf" class="download" download>📄 Download Full Policy Memo (PDF)</a>
     </header>
 
     <section>
         <h2>Background</h2>
-        <p>Beijing is experiencing rapid growth in its electric vehicle fleet, expected to reach 1.5 million by 2025. Although there are 114,000 public charging stations, their uneven distribution and challenges such as high land rent and grid constraints have limited accessibility, especially in dense urban districts.</p>
+        <p>Beijing is experiencing <strong>rapid growth</strong> in its electric vehicle fleet, expected to reach <strong>1.5 million by 2025</strong>. Although there are <strong>114,000 public charging stations</strong>, their uneven distribution and challenges such as <strong>high land rent</strong> and <strong>grid constraints</strong> have limited accessibility, especially in dense urban districts.</p>
     </section>
 
     <section>
         <h2>Stakeholders</h2>
-        <p>The Beijing government, State Grid Corporation, EV owners, private charging companies, real estate developers, and local residents all play crucial roles in policy implementation.</p>
+        <p>The <strong>Beijing government</strong>, <strong>State Grid Corporation</strong>, <strong>EV owners</strong>, <strong>private charging companies</strong>, <strong>real estate developers</strong>, and <strong>local residents</strong> all play crucial roles in policy implementation.</p>
     </section>
 
     <section>
@@ -93,16 +113,12 @@
 
     <section>
         <h2>Recommendation</h2>
-        <p>The <strong>Home Powered</strong> solution is recommended for its sustainability and long-term benefits, including lower costs for EV owners and greater compatibility with future technologies.</p>
-    </section>
-
-    <section>
-        <h2>Download Full Report</h2>
-        <a href="David Shi_Personal Policy Challenge Memo Final.pdf" class="download" download>Download PDF</a>
+        <p>The <strong>Home Powered</strong> solution is recommended for its <strong>sustainability</strong> and <strong>long-term benefits</strong>, including <strong>lower costs</strong> for EV owners and greater compatibility with future technologies.</p>
     </section>
 
     <footer>
-        © 2025 Xiaoyuan Shi · Harvard Kennedy School
+        © 2025 <strong>Xiaoyuan Shi</strong> · <strong>Harvard Kennedy School</strong>
     </footer>
 </body>
 </html>
+
